@@ -1,0 +1,41 @@
+h2 {
+  font-size: 2.5rem;
+}
+
+h5,
+h3 {
+  margin: 2rem;
+  font-size: 1.5rem;
+}
+/* #2c3333 */
+button {
+  padding: 0.6rem;
+  margin: 0.5rem;
+  color: #dcd7c9;
+  background-color: #2c3333;
+  border-radius: 10px;
+  border: 1.5px solid #dcd7c9;
+}
+ul {
+  list-style: none;
+}
+li {
+  margin: 0.3rem;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.quoteWrapper {
+  transform: translateX(-100%);
+  opacity: 0;
+  animation: slideInFromLeft 1s ease-in forwards;
+}
